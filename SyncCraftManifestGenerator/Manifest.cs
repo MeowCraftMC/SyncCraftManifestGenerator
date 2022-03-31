@@ -2,11 +2,12 @@ namespace SyncCraftManifestGenerator;
 
 public class Manifest
 {
-    public string name { get; set; } = "MeowCraftMC";
-    public List<ModEntry> mods { get; set; } = new();
+    public string name { get; set; } = "SyncCraft";
+    public List<Entry> mods { get; set; } = new();
+    public List<Entry> configs { get; set; } = new();
 
-    public class ModEntry {
-        public string name { get; set; }
+    public class Entry {
+        public string path { get; set; }
         public string checksum { get; set; }
     }
 }
